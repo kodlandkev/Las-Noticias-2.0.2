@@ -1,0 +1,332 @@
+body {
+    background-color: #CFCFCF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos de Encabezado y Pie de Página */
+.encabezado, .pie-de-pagina {
+    background-color: #2F4776;
+    color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    border: 15px double #fff;
+    margin-bottom: 20px;
+}
+
+.encabezado h1 {
+    font-size: 40px;
+}
+
+.pie-de-pagina h2 {
+    font-size: 30px;
+}
+
+/* Artículo Destacado */
+.articulo-destacado {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente. */
+    align-items: center; /* Centra los elementos horizontalmente. */
+    width:75%;
+    margin-left: 150px;
+    background-color: #E4E4E4;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 20px 0px 40px black;
+}
+
+.articulo-destacado img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.articulo-destacado-texto {
+    max-width: 800px;
+    text-align: center; /* Centra el texto dentro de este contenedor. */
+}
+
+.articulo-destacado h3 {
+    font-size: 30px;
+    color: #3A64C6;
+    margin-bottom: 10px;
+}
+
+.articulo-destacado .publicacion {
+    font-size: 16px;
+    color: #164AC1;
+    margin-bottom: 15px;
+}
+
+.articulo-destacado .texto {
+    font-size: 20px;
+    color: #5E81D1;
+}
+
+/* Sección de Noticias de Última Hora */
+.titulo-noticias {
+    background-color: #2F4776;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    border:10px double white;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la Rejilla de Noticias usando Flexbox */
+.noticias-rejilla {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+    justify-content: center; /* Centra los elementos horizontalmente en el contenedor */
+    padding: 20px;
+    margin: -10px; /* Compensa el margen de los elementos para lograr el espacio deseado */
+}
+
+/* Tarjeta de Noticia Individual */
+.tarjeta-noticia {
+    width: calc(25% - 20px); /* Define el ancho para que quepan 3 elementos por fila, con un poco de espacio */
+    margin: 10px; /* Espacio alrededor de cada tarjeta (10px arriba, abajo, izquierda y derecha) */
+    background-color: #E4E4E4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px black;
+    transition: transform 0.2s;
+}
+
+.tarjeta-noticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px black;
+}
+
+.tarjeta-noticia img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-noticia h3 {
+    font-size: 20px;
+    color: #3A64C6;
+    margin-bottom: 10px;
+}
+
+.tarjeta-noticia .texto {
+    font-size: 16px;
+    color: #5E81D1;
+    margin-bottom: 10px;
+}
+
+.tarjeta-noticia .publicacion {
+    font-size: 14px;
+    color: #164AC1;
+    font-style: italic;
+}
+
+/* Artículo*/
+.articulo{
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente. */
+    align-items: center; /* Centra los elementos horizontalmente. */
+    width:75%;
+    margin-left: 150px;
+    margin-bottom:50px;
+    background-color: #E4E4E4;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 20px 0px 40px black;
+}
+
+.articulo img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.articulo .texto {
+    font-size: 20px;
+    color: #5E81D1;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #E4E4E4;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formulario-container h2 {
+    font-size: 28px;
+    color: #2F4776;
+    margin-bottom: 20px;
+}
+
+.formulario .form-grupo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    font-size: 18px;
+    color: #3A64C6;
+    margin-bottom: 8px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.boton-enviar {
+    background-color: #3A64C6;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #2F4776;
+}
+
+/* Media para tablets (pantallas de hasta 768px de ancho) */
+@media (max-width: 768px) {
+    /* Estilos del encabezado y pie de página */
+    .encabezado h1 {
+        font-size: 32px;
+    }
+    .pie-de-pagina h2 {
+        font-size: 24px;
+    }
+
+    /* Estilos del artículo destacado */
+    .articulo-destacado, .articulo {
+        width: 90%;
+        margin-left: 5%;
+        box-shadow: 10px 0px 20px black;
+        padding: 15px;
+    }
+
+    .articulo-destacado img, .articulo img {
+        max-width: 70%;
+    }
+
+    .articulo-destacado h3 {
+        font-size: 24px;
+    }
+    .articulo-destacado .publicacion, .articulo .texto {
+        font-size: 18px;
+    }
+
+    /* Título de noticias de última hora */
+    .titulo-noticias {
+        font-size: 20px;
+    }
+
+    /* Rejilla de noticias */
+    .noticias-rejilla {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Tarjeta de noticia individual */
+    .tarjeta-noticia {
+        width: 85%;
+        margin: 10px 0;
+    }
+    .tarjeta-noticia img {
+        height: auto;
+    }
+
+    /*Adaptacion del formulario*/
+    .formulario-container {
+        width: 85%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+}
+
+/* Media para celulares (pantallas de hasta 480px de ancho) */
+@media (max-width: 480px) {
+    /* Estilos del encabezado y pie de página */
+    .encabezado h1 {
+        font-size: 24px;
+    }
+    .pie-de-pagina h2 {
+        font-size: 18px;
+    }
+    .encabezado, .pie-de-pagina {
+        padding: 15px 10px;
+    }
+
+    /* Estilos del artículo destacado */
+    .articulo-destacado, .articulo {
+        width: 95%;
+        margin-left: 2.5%;
+        box-shadow: 5px 0px 10px black;
+    }
+    .articulo-destacado img, .articulo img {
+        max-width: 90%;
+    }
+    .articulo-destacado h3 {
+        font-size: 20px;
+    }
+    .articulo-destacado .publicacion, .articulo .texto {
+        font-size: 16px;
+    }
+
+    /* Título de noticias de última hora */
+    .titulo-noticias {
+        font-size: 18px;
+    }
+
+    /* Tarjeta de noticia individual */
+    .tarjeta-noticia {
+        width: 95%;
+        padding: 10px;
+    }
+    .tarjeta-noticia h3 {
+        font-size: 18px;
+    }
+    .tarjeta-noticia .texto {
+        font-size: 14px;
+    }
+    .tarjeta-noticia .publicacion {
+        font-size: 12px;
+    }
+
+    /*Adaptacion del formulario*/
+    .formulario-container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .formulario-container h2 {
+        font-size: 24px;
+    }
+
+    .formulario label,
+    .formulario input,
+    .formulario textarea,
+    .boton-enviar {
+        font-size: 16px;
+    }
+}
